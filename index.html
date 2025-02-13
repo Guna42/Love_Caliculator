@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator & Story Generator ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>❤️ Love Calculator & Story Generator ❤️</h1>
+        <div class="input-group">
+            <input type="text" id="name1" placeholder="Your Name" class="glow-input">
+            <input type="text" id="name2" placeholder="Crush's Name" class="glow-input">
+        </div>
+        <button onclick="calculateLove()">Calculate Love <i class="fas fa-heart"></i></button>
+        <div id="result" class="result-container">
+            <div id="love-meter">
+                <div id="meter-fill"></div>
+            </div>
+            <p id="percentage"></p>
+            <p id="message"></p>
+            <p id="suggestion"></p>
+            <p id="story"></p>
+            <button id="submit-btn" onclick="celebrateValentines()" style="display: none;">Submit <i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <div id="valentines-animation" class="valentines-animation" style="display: none;">
+        <h2>Wish You Good Luck! ❤️</h2>
+    </div>
+    <div class="hearts-background"></div>
+    <script src="script.js"></script>
+</body>
+</html>
